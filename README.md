@@ -27,6 +27,9 @@ npm run preview
 
 ## Funcionalidades
 
+- Seção com oito certificados em desenvolvimento, programação, tecnologia e produtividade.
+- Exibição apenas dos dados profissionais dos certificados; documentos originais e códigos de validação permanecem privados.
+
 ### Abrir a prévia no Windows
 
 Dê dois cliques em **Abrir portfolio.cmd**, dentro da pasta do projeto. O navegador abrirá em **http://127.0.0.1:5173/**. Mantenha a janela do servidor aberta durante o uso. Este endereço é local: ele funciona somente neste computador enquanto o servidor estiver em execução. Se a conexão for recusada, execute o arquivo novamente. Não abra o index.html diretamente; o React precisa do servidor de desenvolvimento ou de uma versão compilada servida por HTTP.
