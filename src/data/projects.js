@@ -49,6 +49,7 @@ export const projects = [
     source: "./sources/modulo-4.zip",
     image: "./images/project-4.jpg",
     folder: "Módulo 04 - Calculadora IMC",
+    repo: "https://github.com/Evelin563/IMC---version1",
   },
   {
     module: 6,
@@ -64,6 +65,7 @@ export const projects = [
     source: "./sources/modulo-6.zip",
     image: "./images/project-6.jpg",
     folder: "Módulo 06 - Jogo de advinha",
+    repo: "https://github.com/Evelin563/Jogo-de-advinha",
   },
   {
     module: 7,
@@ -80,6 +82,7 @@ export const projects = [
     source: "./sources/modulo-7.zip",
     image: "./images/project-7.jpg",
     folder: "Módulo 07 - Estacionamento Parquímetro",
+    repo: "https://github.com/Evelin563/contador-de-tempo-estacionamento",
   },
   {
     module: 8,
@@ -96,6 +99,7 @@ export const projects = [
     source: "./sources/modulo-8.zip",
     image: "./images/project-8.jpg",
     folder: "Módulo 08 - Cadastro de usuários com CEP",
+    repo: "https://github.com/Evelin563/cadastro-de-usu-rio-com-CEP",
   },
   {
     module: 9,
@@ -113,6 +117,7 @@ export const projects = [
     source: "./sources/modulo-9.zip",
     image: "./images/project-9.jpg",
     folder: "Módulo 09 - Cadastro de clientes",
+    repo: "https://github.com/Evelin563/API-do-CrudCrud",
   },
   {
     module: 11,
@@ -128,6 +133,7 @@ export const projects = [
     source: "./sources/modulo-11.zip",
     image: "./images/project-11.jpg",
     folder: "Módulo 11 - Agência Criativa Web",
+    repo: "https://github.com/Evelin563/API-responsivo",
   },
   {
     module: 14,
@@ -144,6 +150,7 @@ export const projects = [
     source: "./sources/modulo-14.zip",
     image: "./images/project-14.jpg",
     folder: "Módulo 14 - Barbearia",
+    repo: "https://github.com/Evelin563/Barbearia",
   },
   {
     module: 15,
@@ -161,6 +168,7 @@ export const projects = [
     source: "./sources/modulo-15.zip",
     image: "./images/project-15.jpg",
     folder: "Módulo 15 - PET&Style",
+    repo: "https://github.com/Evelin563/petstyle-loja-virtual",
   },
   {
     module: 16,
@@ -176,6 +184,7 @@ export const projects = [
     source: "./sources/modulo-16.zip",
     image: "./images/project-16.jpg",
     folder: "Módulo 16 - Catálogo produtos",
+    repo: "https://github.com/Evelin563/catalogo-produtos-react01",
   },
   {
     module: 17,
@@ -190,6 +199,7 @@ export const projects = [
     source: "./sources/modulo-17.zip",
     image: "./images/project-17.jpg",
     folder: "módulo 17 - TO-DO List",
+    repo: "https://github.com/Evelin563/todo-list-react",
   },
   {
     module: 21,
@@ -205,6 +215,7 @@ export const projects = [
     source: "./sources/modulo-21.zip",
     image: "./images/project-21.jpg",
     folder: "Módulo 21 - Catálogo de livros",
+    repo: "https://github.com/Evelin563/catalogo-de-livros-react-typescript",
   },
   {
     module: 22,

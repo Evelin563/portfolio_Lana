@@ -134,13 +134,6 @@ export default function App() {
               <ProjectCard key={p.module} project={p} onOpen={setSelected} />
             ))}
           </div>
-          <aside className={styles.pending}>
-            <strong>Módulo 20 · To-do List</strong>
-            <p>
-              A pasta fornecida está vazia. Este módulo será incluído quando
-              seus arquivos estiverem disponíveis.
-            </p>
-          </aside>
         </Section>
         <Section
           id="sobre"

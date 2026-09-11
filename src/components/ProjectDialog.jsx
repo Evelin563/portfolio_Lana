@@ -3,6 +3,7 @@ import styles from "../App.module.css";
 export default function ProjectDialog({ project, onClose }) {
   const ref = useRef(null);
   useEffect(() => {
+    // O diálogo nativo contém o foco; ao fechar, devolvemos a navegação ao card.
     const dialog = ref.current;
     const previousFocus = document.activeElement;
     dialog.showModal();

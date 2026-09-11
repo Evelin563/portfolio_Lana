@@ -4,22 +4,23 @@ const text = `# Lana Oliveira — Portfólio
 
 Portfólio profissional em **React**, **Vite** e **CSS Modules**, com os trabalhos da formação Full Stack Java. As descrições foram conferidas no código e nos READMEs fornecidos.
 
-**Versão online:** https://evelin563.github.io/portfolio-lana-oliveira/
+**Status:** entrega local pronta. A publicação será realizada pela autora.
 
-**Repositório:** https://github.com/Evelin563/portfolio-lana-oliveira
+**Endereço previsto após o deploy (ainda não publicado):** https://evelin563.github.io/portfolio-lana-oliveira/
+
+**Repositório criado, ainda sem envio do código:** https://github.com/Evelin563/portfolio-lana-oliveira
 
 ## Rodar localmente
 
 Pré-requisito: Node.js 22.12 ou superior (ou Node.js 24) e npm.
 
 \`\`\`bash
-git clone https://github.com/Evelin563/portfolio-lana-oliveira.git
-cd portfolio-lana-oliveira
+cd portfolio
 npm ci
 npm run dev
 \`\`\`
 
-Abra o endereço informado no terminal. Para gerar e conferir a versão de produção:
+Execute os comandos acima a partir da pasta de projetos, onde está a pasta \`portfolio\` desta entrega. Depois que o código for enviado ao GitHub, também será possível clonar o repositório. Abra o endereço informado no terminal. Para gerar e conferir a versão de produção:
 
 \`\`\`bash
 npm run build
@@ -45,7 +46,7 @@ ${projects.map((p) => `| ${String(p.module).padStart(2, "0")} | ${p.repo ? `[${p
 
 ### Sobre a integridade da entrega
 
-- A pasta **Módulo 20 - To-do List está vazia**. Ela é identificada como pendente no site, sem funcionalidades ou tecnologias inventadas.
+- O módulo 20 foi excluído da apresentação por orientação da autora, pois sua pasta não contém arquivos.
 - Os módulos 24 e 26 mantêm a mesma base Bloom List; ambos aparecem com essa relação explicada. O módulo 30 acrescenta o fluxo de CI/CD.
 - O arquivo ZIP do módulo 23 é uma versão compactada do mesmo módulo e não é contado como um projeto adicional.
 - A apresentação profissional utiliza o nome e a formação do portfólio original. Foto e contato vêm do perfil GitHub conectado. Experiência profissional não fornecida não foi inventada.
@@ -73,11 +74,19 @@ public/
 
 ## Personalizar
 
-Edite os textos e contatos em \`src/App.jsx\`; os dados dos projetos estão em \`src/data/projects.js\`. Para adicionar o módulo 20 quando seus arquivos forem fornecidos, acrescente seu registro, captura e link de código e atualize a contagem e o aviso de pendência. Substitua a foto em \`public/images/lana.jpg\` quando desejar.
+Edite os textos e contatos em \`src/App.jsx\`; os dados dos projetos estão em \`src/data/projects.js\`. Para incluir outros trabalhos, acrescente os registros, as capturas e os links e atualize a contagem. Substitua a foto em \`public/images/lana.jpg\` quando desejar.
 
 Os scripts de preparação e captura em \`scripts/\` registram o processo da entrega. Não são necessários para executar ou publicar o portfólio: todos os recursos finais estão incluídos. Eles dependem da pasta original dos módulos e de ferramentas temporárias de captura, que não fazem parte das dependências da aplicação.
 
 ## Deploy gratuito
+
+O repositório público já foi criado e o GitHub Pages está configurado para GitHub Actions, mas o código não foi enviado e o site não foi publicado. A autora realizará essa etapa. Na pasta local \`portfolio\`, revise o conteúdo e execute:
+
+\`\`\`bash
+git push -u origin main
+\`\`\`
+
+O remoto \`origin\` já aponta para o repositório acima. Após concluir o deploy, confirme o endereço e atualize o status no início deste README.
 
 O workflow \`.github/workflows/deploy.yml\` instala as dependências, compila o site e publica a pasta \`dist\` no GitHub Pages a cada push para \`main\`. Em **Settings → Pages**, a origem deve ser **GitHub Actions**. O caminho base relativo permite hospedar o mesmo build em um subdiretório.
 
