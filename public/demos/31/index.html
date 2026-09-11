@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#892325">
+  <meta name="description" content="Registre as atividades importantes do seu dia, mesmo sem internet.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="stylesheet" href="style.css">
+  <title>Diário de Bordo</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">SEU REGISTRO DIÁRIO</p>
+        <h1>Diário de Bordo</h1>
+        <p class="subtitle">Guarde os momentos, tarefas e descobertas do seu dia.</p>
+      </div>
+      <button id="install-button" class="install-button" type="button" hidden aria-label="Instalar aplicativo">
+        <span aria-hidden="true">↓</span> Instalar app
+      </button>
+    </header>
+
+    <section class="entry-card" aria-labelledby="form-title">
+      <h2 id="form-title">Nova entrada</h2>
+      <form id="entry-form">
+        <div class="field-group">
+          <label for="title">Título</label>
+          <input id="title" name="title" type="text" maxlength="80" placeholder="Ex.: Reunião de planejamento" required>
+        </div>
+        <div class="field-group">
+          <label for="date">Data</label>
+          <input id="date" name="date" type="date" required>
+        </div>
+        <div class="field-group field-full">
+          <label for="description">Descrição</label>
+          <textarea id="description" name="description" rows="5" maxlength="1000" placeholder="O que aconteceu hoje?" required></textarea>
+        </div>
+        <button class="save-button" type="submit">Salvar entrada</button>
+      </form>
+    </section>
+
+    <section class="entries-section" aria-labelledby="entries-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">HISTÓRICO</p>
+          <h2 id="entries-title">Minhas entradas</h2>
+        </div>
+        <span id="entry-count" aria-live="polite"></span>
+      </div>
+      <div id="entries-list" class="entries-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <template id="empty-state-template">
+    <div class="empty-state">
+      <span aria-hidden="true">✦</span>
+      <h3>Seu diário está em branco</h3>
+      <p>Registre a primeira atividade usando o formulário acima.</p>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>

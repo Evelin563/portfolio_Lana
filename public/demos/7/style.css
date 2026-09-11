@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Nunito", Arial, sans-serif;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 15% 20%, rgba(117, 230, 255, 0.7), transparent 25%),
+    radial-gradient(circle at 85% 80%, rgba(82, 95, 255, 0.65), transparent 30%),
+    linear-gradient(135deg, #021b4e, #075d9b, #00b7d9);
+}
+
+/* Bolhas no fundo */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow:
+    80px 120px 0 rgba(255, 255, 255, 0.12),
+    210px 40px 0 rgba(255, 255, 255, 0.15),
+    330px 170px 0 rgba(255, 255, 255, 0.1),
+    -90px 250px 0 rgba(255, 255, 255, 0.13);
+}
+
+body::before {
+  width: 35px;
+  height: 35px;
+  top: 10%;
+  left: 8%;
+  animation: bolhas 8s infinite ease-in-out;
+}
+
+body::after {
+  width: 22px;
+  height: 22px;
+  right: 12%;
+  bottom: 12%;
+  animation: bolhas 6s infinite ease-in-out reverse;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+
+  width: min(420px, 90%);
+  padding: 35px 32px;
+  text-align: center;
+
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+
+  background: rgba(2, 28, 91, 0.5);
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(75, 234, 255, 0.45);
+}
+
+.jellyfish {
+  font-size: 70px;
+  margin-bottom: 5px;
+  filter: drop-shadow(0 0 12px #7cf5ff);
+  animation: flutuar 3s infinite ease-in-out;
+}
+
+h1 {
+  margin: 5px 0 10px;
+  font-size: 38px;
+  letter-spacing: 1px;
+  color: #e8fdff;
+  text-shadow: 0 0 15px #4feaff;
+}
+
+.descricao {
+  margin: 0 0 20px;
+  color: #d2f9ff;
+  line-height: 1.5;
+}
+
+.tabela-tempos {
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 15px;
+  text-align: left;
+
+  background: rgba(0, 196, 255, 0.15);
+  border: 1px solid rgba(130, 242, 255, 0.3);
+}
+
+.tabela-tempos p {
+  margin: 7px 0;
+  color: #dffcff;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  outline: none;
+
+  color: #03376c;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 17px;
+  font-family: inherit;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #55efff;
+  box-shadow: 0 0 15px rgba(85, 239, 255, 0.8);
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #00d4ff, #2659e8);
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 800;
+
+  box-shadow: 0 8px 20px rgba(0, 213, 255, 0.4);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 225, 255, 0.65);
+}
+
+.resultado {
+  min-height: 75px;
+  margin-top: 22px;
+  padding: 15px;
+  border-radius: 18px;
+
+  background: rgba(0, 20, 75, 0.48);
+  border: 1px solid rgba(136, 246, 255, 0.25);
+}
+
+.resultado p {
+  margin: 6px 0;
+}
+
+.sucesso {
+  color: #8dfff2;
+  font-weight: 800;
+}
+
+.erro {
+  color: #ffb6d2;
+  font-weight: 800;
+}
+
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+
+  50% {
+    transform: translateY(-14px) rotate(4deg);
+  }
+}
+
+@keyframes bolhas {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-80px);
+  }
+}

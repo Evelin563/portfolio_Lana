@@ -1,0 +1,257 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f1f3;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background: linear-gradient(135deg, #3b0f22, #7a2445);
+  color: white;
+  min-height: 420px;
+}
+
+.menu {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 25px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo::after {
+  content: " ✦";
+  color: #ffd6e5;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: #3b0f22;
+}
+
+.menu a:active {
+  background-color: #ffd6e5;
+}
+
+/* Banner */
+.banner {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 0;
+}
+
+.banner h2 {
+  font-size: 42px;
+  max-width: 650px;
+  margin: 10px 0;
+}
+
+.banner p {
+  max-width: 600px;
+  font-size: 18px;
+}
+
+.subtitulo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffd6e5;
+  font-weight: bold;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: white;
+  color: #3b0f22;
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #ffd6e5;
+  transform: scale(1.05);
+}
+
+/* Conteúdo */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.secao,
+.objetivo {
+  background-color: white;
+  padding: 35px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.secao h2,
+.objetivo h2 {
+  color: #3b0f22;
+  margin-bottom: 15px;
+}
+
+.secao h2::before,
+.objetivo h2::before {
+  content: "▸ ";
+  color: #7a2445;
+}
+
+/* Cards */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #faf7f8;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #ead7df;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(59, 15, 34, 0.2);
+}
+
+.card h3 {
+  color: #7a2445;
+  margin-bottom: 10px;
+}
+
+.projeto span {
+  display: inline-block;
+  background-color: #3b0f22;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+/* Aside */
+.objetivo {
+  border-left: 6px solid #7a2445;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #c7a8b7;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7a2445;
+  box-shadow: 0 0 6px rgba(122, 36, 69, 0.4);
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background-color: #3b0f22;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7a2445;
+  transform: scale(1.02);
+}
+
+button:active {
+  background-color: #1f0812;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1f0812;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner h2 {
+    font-size: 32px;
+  }
+
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}

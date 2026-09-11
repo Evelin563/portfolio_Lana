@@ -1,0 +1,24 @@
+{
+  "name": "api-responsivo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+  "sass": "sass scss/estilos.scss css/estilos.css --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evelin563/API-responsivo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Evelin563/API-responsivo/issues"
+  },
+  "homepage": "https://github.com/Evelin563/API-responsivo#readme",
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}

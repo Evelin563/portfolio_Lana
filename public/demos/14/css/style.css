@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* MENU */
+
+.navbar {
+  background-color: rgba(8, 8, 8, 0.97);
+  border-bottom: 1px solid #8d1018;
+  padding: 12px 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d4af37;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.nav-link:hover {
+  color: #d4af37 !important;
+}
+
+/* HOME */
+
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.60)),
+    url("../img/06.jpg") center/cover no-repeat;
+}
+
+.tag {
+  color: #d4af37;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.section h2 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.9;
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  display: block;
+  color: #a30f1c;
+}
+
+.hero-text {
+  max-width: 560px;
+  color: #dddddd;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.hero-img {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #d4af37;
+  margin: 0 auto;
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.35);
+}
+
+/* BOTÃO WHATSAPP */
+
+.btn-whatsapp {
+  background-color: #25d366;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 14px 30px;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #d4af37;
+  color: #111111;
+  transform: translateY(-3px);
+}
+
+/* SEÇÕES */
+
+.section {
+  padding: 90px 0;
+  background-color: #111111;
+}
+
+.section-dark {
+  background: linear-gradient(135deg, #28070b, #0a0a0a);
+}
+
+.section h2 {
+  font-size: clamp(2.7rem, 5vw, 4.2rem);
+  margin: 10px 0 20px;
+}
+
+.section p {
+  color: #d0d0d0;
+  line-height: 1.8;
+}
+
+.sobre-img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #8d1018;
+}
+
+.linha {
+  width: 100px;
+  height: 4px;
+  margin-top: 25px;
+  background-color: #d4af37;
+}
+
+/* SERVIÇOS */
+
+.service-card {
+  background-color: #181818;
+  border: 1px solid #8d1018;
+  color: #ffffff;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  border-color: #d4af37;
+  box-shadow: 0 12px 28px rgba(163, 15, 28, 0.35);
+  transform: translateY(-8px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.service-card p {
+  font-size: 0.92rem;
+}
+
+.service-card strong {
+  color: #d4af37;
+  font-size: 1.1rem;
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos {
+  background-color: #111111;
+}
+
+.testimonial {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background-color: #181818;
+  border: 1px solid #8d1018;
+  border-radius: 18px;
+}
+
+.testimonial img {
+  width: 115px;
+  height: 115px;
+  margin: 0 auto 20px;
+  object-fit: cover;
+  border: 4px solid #d4af37;
+  border-radius: 50%;
+}
+
+.testimonial p {
+  color: #dddddd;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.testimonial h4 {
+  color: #d4af37;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.9rem;
+  margin-bottom: 0;
+}
+
+.testimonial span {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+}
+
+/* CONTATO */
+
+.contact-box {
+  max-width: 720px;
+  padding: 45px;
+  background-color: #181818;
+  border: 1px solid #8d1018;
+  border-radius: 18px;
+}
+
+.contact-box p {
+  font-size: 1.1rem;
+}
+
+/* RODAPÉ */
+
+footer {
+  background-color: #050505;
+  border-top: 1px solid #8d1018;
+  padding: 22px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #aaaaaa;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 991px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-text {
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    margin-top: 20px;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .contact-box {
+    padding: 28px 20px;
+  }
+
+  .testimonial {
+    padding: 30px 20px;
+  }
+}
