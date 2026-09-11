@@ -21,7 +21,6 @@ export default function ProjectCard({ project, onOpen }) {
       </button>
       <div className={styles.cardBody}>
         <p className={styles.meta}>
-          MÓDULO {String(project.module).padStart(2, "0")}{" "}
           <span>{project.category}</span>
         </p>
         <h3>

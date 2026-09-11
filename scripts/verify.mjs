@@ -13,7 +13,7 @@ try {
   for (const width of [1440, 768, 390, 320]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("http://127.0.0.1:5173/", { waitUntil: "networkidle" });
-    assert.equal(await page.locator("main article").count(), 24);
+    assert.equal(await page.locator("main article").count(), projects.length + 4);
     assert.ok(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,
@@ -65,7 +65,7 @@ try {
   }
   assert.deepEqual(errors, []);
   console.log(
-    "20 diálogos: abertura, Escape, retorno de foco e arquivos válidos. Sem erros JavaScript.",
+    "Diálogos: abertura, Escape, retorno de foco e arquivos válidos. Sem erros JavaScript.",
   );
 } finally {
   await browser.close();

@@ -40,7 +40,7 @@ export default function ProjectDialog({ project, onClose }) {
           height="760"
         />
         <p className={styles.eyebrow}>
-          Módulo {project.module} · {project.category}
+          {project.category}
         </p>
         <h2 id="project-title">{project.title}</h2>
         <p>{project.description}</p>

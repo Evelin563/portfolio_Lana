@@ -1,3 +1,15 @@
+:root {
+  /* Paleta fornecida pela autora; tons escuros preservam o contraste do texto. */
+  --honeydew: #edf8e5;
+  --tea-green: #e8ffbe;
+  --blush-pop: #ffb8e3;
+  --cotton-candy: #ff819c;
+  --blushed-brick: #ce4a4a;
+  --ink: #39242a;
+  --muted: #65464f;
+  --border: #c89198;
+  --paper: #f8fcf4;
+}
 * {
   box-sizing: border-box;
 }
@@ -7,8 +19,8 @@ html {
 }
 body {
   margin: 0;
-  background: #f9faf7;
-  color: #172c27;
+  background: var(--honeydew);
+  color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.65;
@@ -35,7 +47,7 @@ img {
 }
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid #af591e;
+  outline: 3px solid var(--ink);
   outline-offset: 5px;
 }
 h1,
@@ -45,8 +57,8 @@ p {
   margin-top: 0;
 }
 ::selection {
-  background: #cfdfaf;
-  color: #172c27;
+  background: var(--blush-pop);
+  color: var(--ink);
 }
 @media (prefers-reduced-motion: reduce) {
   html {

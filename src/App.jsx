@@ -107,7 +107,7 @@ export default function App() {
         </section>
         <div className={styles.stats}>
           <p>
-            <strong>20</strong> projetos com código
+            <strong>{projects.length}</strong> projetos com código
           </p>
           <p>
             <strong>01</strong> trajetória em evolução
@@ -127,7 +127,7 @@ export default function App() {
               projeto representa um novo desafio, uma tecnologia e um passo
               adiante.
             </p>
-            <span>20 PROJETOS · MÓDULOS 02–33</span>
+            <span>{projects.length} PROJETOS</span>
           </div>
           <div className={styles.grid}>
             {projects.map((p) => (
