@@ -1,81 +1,27 @@
 :root {
-  /* Paleta fornecida: Floral White, Pastel Pink, Racing Red, Crushed Berry e Rich Mahogany. */
-  --honeydew: #fff9f2;
-  --tea-green: #ffcad0;
-  --blush-pop: #ffcad0;
-  --cotton-candy: #f10222;
-  --blushed-brick: #892325;
-  --ink: #250202;
-  --muted: #704344;
-  --border: #e7b5b7;
-  --paper: #fff9f2;
+  /* Paleta Night Rider: tons profundos de vinho e vermelho. */
+  --night: #020101;
+  --aubergine: #3d0b0d;
+  --mahogany: #53080e;
+  --burgundy: #72090f;
+  --pohutukawa: #930510;
+  --terracotta: #b21f29;
+  --ivory: #fff7f4;
+  --rose: #efb8b8;
+  --muted: #c69a9b;
+  --border: rgba(239, 184, 184, .16);
+  --panel: rgba(19, 3, 4, .82);
+  --honeydew: #120304;
+  --tea-green: #3d0b0d;
+  --blush-pop: #53080e;
+  --cotton-candy: #b21f29;
+  --blushed-brick: #930510;
+  --ink: #fff7f4;
+  --paper: #120304;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
-}
-body {
-  margin: 0;
-  background:
-    radial-gradient(circle at 88% 8%, rgba(255, 202, 208, .72), transparent 25rem),
-    radial-gradient(circle at 8% 42%, rgba(241, 2, 34, .07), transparent 28rem),
-    var(--honeydew);
-  color: var(--ink);
-  font-family: Inter, Poppins, "Segoe UI", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.65;
-}
-button,
-a,
-input,
-textarea {
-  font: inherit;
-}
-a {
-  color: inherit;
-}
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-button {
-  cursor: pointer;
-}
-img {
-  max-width: 100%;
-  display: block;
-}
-button:focus-visible,
-a:focus-visible {
-  outline: 3px solid var(--ink);
-  outline-offset: 5px;
-}
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
-}
-::-webkit-scrollbar { width: 11px; }
-::-webkit-scrollbar-track { background: var(--honeydew); }
-::-webkit-scrollbar-thumb { background: var(--cotton-candy); border: 3px solid var(--honeydew); border-radius: 20px; }
-::selection {
-  background: var(--cotton-candy);
-  color: white;
-}
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    transition: none !important;
-  }
-}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:40px;background:var(--night)}
+body{min-width:320px;margin:0;background:radial-gradient(circle at 78% 4%,rgba(147,5,16,.24),transparent 28rem),radial-gradient(circle at 12% 42%,rgba(83,8,14,.22),transparent 32rem),linear-gradient(180deg,#090203 0%,var(--night) 42%,#080203 100%);background-attachment:fixed;color:var(--ivory);font-family:Inter,Poppins,"Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.65}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.3;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 82%)}
+button,a,input,textarea{font:inherit}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}img{display:block;max-width:100%}button:focus-visible,a:focus-visible{outline:3px solid var(--terracotta);outline-offset:5px}h1,h2,h3,p{margin-top:0}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--night)}::-webkit-scrollbar-thumb{background:linear-gradient(var(--terracotta),var(--burgundy));border:2px solid var(--night);border-radius:20px}::selection{background:var(--terracotta);color:var(--ivory)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
