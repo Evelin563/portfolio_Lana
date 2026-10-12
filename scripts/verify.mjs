@@ -14,7 +14,7 @@ try {
   for (const width of [1440, 768, 390, 320]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("http://127.0.0.1:5173/", { waitUntil: "networkidle" });
-    assert.equal(await page.locator("main article").count(), featuredProjects.length + 20);
+    assert.equal(await page.locator("main article").count(), featuredProjects.length + 27);
     assert.ok(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,
@@ -54,7 +54,7 @@ try {
   assert.equal(await page.getByRole("link", { name: "Projetos", exact: true }).count(), 1);
   assert.equal(await page.getByRole("link", { name: "Ver mais projetos" }).getAttribute("href"), "https://github.com/Evelin563");
   assert.equal(await page.getByRole("link", { name: "Conversar com Lana pelo WhatsApp" }).getAttribute("href"), "https://wa.me/5546999004565");
-  assert.equal(await page.getByRole("link", { name: "LinkedIn" }).getAttribute("href"), "https://www.linkedin.com/in/lana-evelin-de-oliveira-413982270/");
+  assert.equal(await page.getByRole("link", { name: "LinkedIn", exact: true }).getAttribute("href"), "https://www.linkedin.com/in/lana-evelin-de-oliveira-413982270/");
   for (const p of featuredProjects) {
     const button = page.getByRole("button", {
       name: `Ver detalhes de ${p.title}`,
