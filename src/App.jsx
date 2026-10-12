@@ -22,7 +22,7 @@ const certificates = [
   { title: "Agentes Autônomos (Agentic AI)", issuer: "FIAP · Nano Courses", hours: "40 horas", date: "11 jul. 2026", area: "Tecnologia" },
   { title: "Inteligência Artificial", issuer: "EBAC", hours: "25 horas", date: "16 maio 2026", area: "Tecnologia" },
   { title: "Introdução à Programação", issuer: "EBAC", hours: "18 horas", date: "14 abr. 2026", area: "Programação" },
-  { title: "Excel Básico", issuer: "SENAR", hours: "15 horas", date: "2025", area: "Produtividade" },
+  { title: "Front-End", issuer: "EBAC", hours: "Curso concluído", date: "14 set. 2026", area: "Desenvolvimento Web" },
 ];
 
 export default function App() {
