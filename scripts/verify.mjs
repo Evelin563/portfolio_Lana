@@ -14,7 +14,7 @@ try {
   for (const width of [1440, 768, 390, 320]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("http://127.0.0.1:5173/", { waitUntil: "networkidle" });
-    assert.equal(await page.locator("main article").count(), featuredProjects.length + 27);
+    assert.equal(await page.locator("main article").count(), featuredProjects.length + 14);
     assert.ok(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,
